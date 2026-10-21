@@ -1,9 +1,9 @@
 import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router-dom';
-import { AuthProvider } from '../../auth/AuthContext';
-import AdminMembers from './AdminMembers';
-import { getAdminMembers, setMemberRole } from '../../api/backend';
+import { AuthProvider } from '../auth/AuthContext';
+import AdminMembers from './admin/AdminMembers';
+import { getAdminMembers, setMemberRole } from '../api/backend';
 
 jest.mock('../../api/backend');   // backend.js ทั้งไฟล์กลายเป็นของปลอม เรากำหนดคำตอบเอง
 
